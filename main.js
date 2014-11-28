@@ -7,5 +7,8 @@ var sprite = new SpriteAnimator({
     frame: {
         width: 124,
         height: 93
+    },
+    animation: {
+        interval: 40
     }
 });
