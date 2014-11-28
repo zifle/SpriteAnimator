@@ -12,3 +12,5 @@ var sprite = new SpriteAnimator({
         interval: 40
     }
 });
+
+sprite.startAnimation();
