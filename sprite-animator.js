@@ -97,7 +97,7 @@ SpriteAnimator.prototype.setSpriteStyling = function() {
         'height: '+this.options.frame.height+'px;' +
         'background-size: '+this.options.sprite.width+'px '+this.options.sprite.height+'px;' +
         'background-position: 0 0;' +
-        ''
+        'background-repeat: no-repeat;'
     ;
     sprite.setAttribute('style', style);
 
@@ -141,5 +141,5 @@ SpriteAnimator.prototype.nextFrame = function() {
     if (++this.currentFrame == this.options.animation.frames) this.currentFrame = 0;
     var frame = this.options.frames[this.currentFrame];
 
-    this.spriteContainer.style.backgroundPosition = frame.x+'px '+frame.y+'px';
+    this.spriteContainer.style.backgroundPosition = '-'+frame.x+'px -'+frame.y+'px';
 };
